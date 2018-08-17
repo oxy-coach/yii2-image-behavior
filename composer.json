@@ -18,6 +18,6 @@
         "php": ">=5.4.0"
     },
     "autoload": {
-        "psr-4": { "oxy-coach\\image-behavior\\": "" }
+        "psr-4": { "oxycoach\\imagebehavior\\": "" }
     }
 }
