@@ -1,0 +1,23 @@
+{
+    "name": "oxy-coach/yii2-image-behavior",
+    "description": "yii2 image upload behavior",
+    "keywords": ["yii2", "behavior", "image", "upload", "imageUpload"],
+    "homepage": "https://github.com/oxy-coach/yii2-image-behavior",
+    "minimum-stability": "dev",
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "oxy-coach",
+            "email": "kolchin.moon@gmail.com",
+            "homepage": "https://github.com/oxy-coach",
+            "homepage": "https://github.com/oxy-coach",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": { "oxy-coach\\image-behavior\\": "" }
+    }
+}
