@@ -1,18 +1,18 @@
-# yii2-file-behavior
-Yii 2 file uploading
+# yii2-image-behavior
+Yii 2 image uploading
 
 ## Install via Composer
 
 Run the following command
 
 ```bash
-$ composer require oxy-coach/yii2-file-behavior "*"
+$ composer require oxy-coach/yii2-image-behavior "*"
 ```
 
 or add
 
 ```bash
-$ "oxy-coach/yii2-file-behavior": "*"
+$ "oxy-coach/yii2-image-behavior": "*"
 ```
 
 to the require section of your `composer.json` file.
