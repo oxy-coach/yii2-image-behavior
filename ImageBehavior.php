@@ -197,6 +197,22 @@ class ImageBehavior extends Behavior
     }
 
     /**
+     * Images sorting
+     * @param arrray $positions - array of images id's
+     */
+    public function sortImages(array $positions)
+    {
+        $model = $this->owner;
+
+        $positions = array_flip($positions);
+
+        foreach ($model->images as $image) {
+            $image->sort = $positions[$image->id];
+            $image->save();
+        }
+    }
+
+    /**
      * Image save
      * @param $file
      * @param int $index
