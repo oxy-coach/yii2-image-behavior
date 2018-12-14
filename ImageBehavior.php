@@ -219,7 +219,7 @@ class ImageBehavior extends Behavior
      * @return bool
      * @throws \ImagickException
      */
-    private function saveImage(UploadedFile $file, $index = 0)
+    protected function saveImage(UploadedFile $file, $index = 0)
     {
         if ($file === null || $file === '') return false;
 
@@ -255,7 +255,7 @@ class ImageBehavior extends Behavior
      * @param string $newPath
      * @throws \ImagickException
      */
-    private function resizeImage(string $originalFilePath, int $width, int $height, string $newPath)
+    protected function resizeImage(string $originalFilePath, int $width, int $height, string $newPath)
     {
         $image = new \Imagick($originalFilePath);
         $geo = $image->getImageGeometry();
@@ -279,7 +279,7 @@ class ImageBehavior extends Behavior
      * @param int $index
      * @return bool
      */
-    private function saveToDb(string $path, string $extension, int $index)
+    protected function saveToDb(string $path, string $extension, int $index)
     {
         $model = $this->owner;
         $class = $this->imageModel;
