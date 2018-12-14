@@ -314,7 +314,7 @@ class ImageBehavior extends Behavior
      * @param string $folder
      * @return bool|string
      */
-    private function getUploadPath(string $folder)
+    protected function getUploadPath(string $folder)
     {
         return $this->getPath($this->uploadPath, $folder);
     }
@@ -325,7 +325,7 @@ class ImageBehavior extends Behavior
      * @param string $folder
      * @return bool|string
      */
-    private function getWebUploadPath(string $folder)
+    protected function getWebUploadPath(string $folder)
     {
         return $this->getPath($this->webUpload, $folder);
     }
@@ -337,7 +337,7 @@ class ImageBehavior extends Behavior
      * @param string $folder
      * @return bool|string
      */
-    private function getPath(string $path, string $folder)
+    protected function getPath(string $path, string $folder)
     {
         $folderPath = ($folder) ? '/' . $folder : '' ;
         return Yii::getAlias($path . $folderPath);
